@@ -43,3 +43,15 @@ footer {
 footer p {
   text-align: center;
 }
+
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
