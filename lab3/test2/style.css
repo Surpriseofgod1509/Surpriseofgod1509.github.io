@@ -1,4 +1,14 @@
+html {
+  font-family: "IBM Plex Serif", serif;
+}
+
+h1,
+h2 {
+  font-family: "Bevan", serif;
+}
+
 /* General setup */
+
 
 * {
   box-sizing: border-box;
