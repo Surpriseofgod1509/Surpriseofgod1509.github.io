@@ -11,3 +11,6 @@ const image = [
   { filename: "pic4.jpg", alt: "Section of wall" },
   { filename: "pic5.jpg", alt: "Leaf" },
 ];
+
+const baseURL =
+  "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
