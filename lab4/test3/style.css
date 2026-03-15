@@ -23,3 +23,8 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
+body {
+  overflow: hidden;
+  height: inherit;
+  background-color: black;
+}
