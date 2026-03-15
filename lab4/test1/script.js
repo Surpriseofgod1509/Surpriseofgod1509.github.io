@@ -39,20 +39,25 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+  // Step 1: generate a fresh random story
+  let newStory = returnRandomStoryString();
+
+  // Step 2: replace Bob with custom name (if provided)
   if (customName.value !== "") {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
-  
   }
 
+  // Step 3: apply UK locale conversions
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300/14);
-    const temperature = Math.round(94 - 32) * (5 / 9);
-     newStory = newStory.replace("300 pounds", weight);
+    const weight = Math.round(300 / 14) + " stone";
+    const temperature = Math.round((94 - 32) * (5 / 9)) + " Celsius";
+
+    newStory = newStory.replace("300 pounds", weight);
     newStory = newStory.replace("94 Fahrenheit", temperature);
   }
 
-  // TODO: replace "" with the correct expression
+  // Step 4: output the final story
   story.textContent = newStory;
   story.style.visibility = "visible";
 }
