@@ -39,7 +39,8 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
-  let newStory = returnRandomStoryString();
+let newStory = returnRandomStoryString();
+
 
   if (customName.value !== "") {
     const name = customName.value;
@@ -50,8 +51,9 @@ function generateStory() {
     const weight = Math.round(300 / 14) + " stone";
     const temperature = Math.round((94 - 32) * (5 / 9)) + " Celsius";
 
-    newStory = newStory.replace("300 pounds", weight);
-    newStory = newStory.replace("94 Fahrenheit", temperature);
+  newStory = newStory.replace("300 pounds", weight);
+  newStory = newStory.replace("94 Fahrenheit", temperature);
+
   }
 
   story.textContent = newStory;
